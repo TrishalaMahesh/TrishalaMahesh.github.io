@@ -213,6 +213,11 @@ a{
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
+  .coffee-cup {
+    width: 10%; /* Set the width as a percentage of the parent element */
+    max-width: 100px; /* Set a maximum width if needed */ /* Set the width of the coffee cup image */
+    vertical-align: middle; /* Vertically align the image within the line of text */
+}
 
   /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -243,7 +248,7 @@ a{
     }
 
     .wex,
-    .skills,
+    .skills,.edu,
     .projects {
         width: 100%;
         margin: auto;
@@ -252,31 +257,17 @@ a{
     .scale {
         width: 50%;
     }
-    .edu {
+    /* .edu {
         width: 100%;
         margin: auto;
-    }
+    } */
      /* Adjust the width of the images */
-     .edu img {
+     /* .edu img {
         width: 100%; /* Make images responsive */
-        max-width: 200px; /* Limit the maximum width of the images */
-    }
+        /* max-width: 200px; /* Limit the maximum width of the images */
+    /* } */ 
 
     /* Adjust font sizes for education section */
-    .edu h3,
-    .edu h4,
-    .edu p {
-        font-size: 14px;
-    }
+  
 
 }
-.heart {
-    color: red; /* Set the color of the heart */
-    font-size: 20px; /* Adjust the font size as needed */
-}
-.coffee-cup {
-    width: 10%; /* Set the width as a percentage of the parent element */
-    max-width: 100px; /* Set a maximum width if needed */ /* Set the width of the coffee cup image */
-    vertical-align: middle; /* Vertically align the image within the line of text */
-}
-
