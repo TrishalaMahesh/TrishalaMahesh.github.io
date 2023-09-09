@@ -252,6 +252,11 @@ a{
     .scale {
         width: 50%;
     }
+    .edu {
+        width: 100%;
+        margin: auto;
+    }
+
 }
 .heart {
     color: red; /* Set the color of the heart */
