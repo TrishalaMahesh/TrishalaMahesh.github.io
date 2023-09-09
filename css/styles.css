@@ -54,6 +54,7 @@ p{
 
 .middle-container {
     background-color:white ;
+   
 
 
 }
@@ -71,7 +72,7 @@ hr{
 
 .mid{
     background-color: white;
-    padding: 1px;
+   
 
  
 }
@@ -219,6 +220,22 @@ a{
     vertical-align: middle; /* Vertically align the image within the line of text */
 }
 
+.twocol {
+    display: flex; /* Use flexbox for a two-column layout */
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Add some spacing between the columns */
+}
+
+/* Style the image column */
+.imgcol {
+    flex: 1; /* Make it grow to fill available space */
+}
+
+/* Style the information column */
+.infocol {
+    flex: 2; /* Make it take twice the space of the image column */
+}
+
   /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     body {
@@ -230,7 +247,7 @@ a{
     }
 
     h2,
-    h3 {
+    h3 ,h4{
         font-size: 18px;
     }
 
@@ -248,7 +265,7 @@ a{
     }
 
     .wex,
-    .skills,.edu,
+    .skills,
     .projects {
         width: 100%;
         margin: auto;
@@ -256,6 +273,54 @@ a{
 
     .scale {
         width: 50%;
+    }
+
+    .edu img {
+        width: 100%; /* Make images responsive */
+        max-width: 200px; /* Limit the maximum width of the images */
+        margin: auto; /* Center align the images */
+        display: block; /* Remove any default inline styles */
+    }
+    .edu h3 {
+        font-size: 18px; /* Adjust heading font size */
+    }
+
+    .edu h4 {
+        font-size: 16px; /* Adjust subheading font size */
+    }
+
+    .edu p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+
+     /* Adjust width and text alignment for education section divs */
+    .edu-content {
+        width: 100%; /* Make the divs take up the full width */
+        text-align: center; /* Center-align text and content */
+        margin: auto; /* Center-align the divs horizontally */
+        padding: 20px; /* Add padding for spacing */
+
+    }
+
+    .edu-content {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .edu-content h3 {
+        font-size: 18px; /* Adjust the font size for h3 on smaller screens */
+    }
+
+    .edu-content h4 {
+        font-size: 16px; /* Adjust the font size for h4 on smaller screens */
+    }
+
+    .edu-content p {
+        font-size: 14px; /* Adjust the font size for paragraphs on smaller screens */
+        line-height: 1.5; /* Add line-height for better readability */
+        margin-bottom: 10px; /* Add margin to separate paragraphs */
     }
     /* .edu {
         width: 100%;
@@ -268,6 +333,22 @@ a{
     /* } */ 
 
     /* Adjust font sizes for education section */
-  
+    .two-column {
+        flex-direction: column; /* Change to a single column layout on smaller screens */
+    }
+    
+    .info-column {
+        flex: 1; /* Equal width for both columns in the single-column layout */
+    }
+
+    .bottom-container {
+        text-align: center;
+    }
+
+    .bottom-container h2 {
+        font-size: 24px;
+    }
 
 }
+
+
