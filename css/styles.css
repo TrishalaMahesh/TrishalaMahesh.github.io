@@ -83,6 +83,10 @@ hr{
 .bottom-container{
    
     background-color:#1F4172;
+  
+    color:  #FF6AC2;
+    
+ ;
     
    
 
@@ -134,6 +138,10 @@ table{
     text-align: center;
 }
 
+.edufooter {
+    font-size: 14px; /* Adjust paragraph font size */
+    color:  #FF6AC2;
+}
 
 .edu{
     text-align: left;
@@ -296,6 +304,7 @@ a{
     .edu p {
         font-size: 14px; /* Adjust paragraph font size */
     }
+   
 
      /* Adjust width and text alignment for education section divs */
     .edu-content {
